@@ -29,7 +29,7 @@ int main() {
     }
     output(matrix, M, N);
 
-    printf("Выберите столбец, по которому следует отсортировать значения: ");
+    printf("Выберите столбец, по которому следует отсортировать значения:");
     int K;
     if (scanf("%d", &K) != 1 || K < 1 || K > N) {
         printf("Некорректный ввод");
@@ -78,18 +78,19 @@ int input(int **matrix, int rows, int cols) {
 }
 
 int **sort(int **matrix, int rows, int cols, int key) {
-    int **sort_row = init_matrix(rows, 2);
+    int **sort_row = init_matrix(rows - 1, 2);
     if (sort_row == NULL) {
         return NULL;
     }
-    for (int i = 0; i < rows; i++) {
-        sort_row[i][0] = matrix[i][key];
-        sort_row[i][1] = i;
+    for (int i = 0; i < rows - 1; i++) {
+        sort_row[i][0] = matrix[i + 1][key];
+        sort_row[i][1] = i + 1;
     }
+    
 
     //bubble sort
-    for (int i = 0; i < rows - 1; i++) {
-        for (int j = i + 1; j < rows; j++) {
+    for (int i = 0; i < rows - 2; i++) {
+        for (int j = i + 1; j < rows - 1; j++) {
             if (sort_row[j][0] < sort_row[i][0]) {
                 int temp_v = sort_row[i][0];
                 int temp_i = sort_row[i][1];
@@ -105,9 +106,14 @@ int **sort(int **matrix, int rows, int cols, int key) {
 
     //restore 
     int **result = init_matrix(rows, cols);
-    for (int i = 0; i < rows; i++) {
+    //numbers row
+    for (int j = 0; j < cols; j++) {
+        result[0][j] = j + 1;
+    }
+    //restore rows
+    for (int i = 0; i < rows - 1; i++) {
         for (int j = 0; j < cols; j++) {
-            result[i][j] = matrix[sort_row[i][1]][j];
+            result[i + 1][j] = matrix[sort_row[i][1]][j];
         }
     }
     return result;
