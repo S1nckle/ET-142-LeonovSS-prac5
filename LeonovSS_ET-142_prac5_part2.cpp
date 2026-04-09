@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include <windows.h>
 
 using std::string;
 
@@ -61,8 +62,9 @@ int ends_with_dot(string str) {
     Чек - число после слова "чек" (или любое другое число в предложении) кроме числа магазинов
 */
 int main() {
-    setlocale(LC_ALL, "ru_RU.UTF-8");
-    
+    SetConsoleCP(CP_UTF8);
+    SetConsoleOutputCP(CP_UTF8);
+
     string s;
     getline(std::cin, s);
     //Текущий символ

@@ -1,0 +1,288 @@
+Grand Plaza Hotel
+100001
+Lux
+3
+25000
+3
+TV
+Bath
+Minibar
+2
+Coffee machine
+Internet
+1
+Roomservice
+Sunset Inn
+100002
+Standard
+2
+8500
+2
+Twin bed
+Fan
+3
+Teapot
+Microwave
+Iron
+1
+Health care
+Mountain View Resort
+100003
+Eco
+4
+5500
+1
+Single bed
+2
+Gels
+Coffee machine
+2
+Internet
+TV
+Ocean Breeze Hotel
+100004
+Lux
+5
+32000
+2
+Climate control
+Bath
+3
+Minibar
+Roomservice
+Health care
+2
+Twin bed
+Microwave
+City Central Hostel
+100005
+Eco
+6
+3500
+3
+Fan
+TV
+Single bed
+1
+Teapot
+2
+Internet
+Iron
+Royal Garden
+100006
+Lux
+2
+45000
+4
+Bath
+TV
+Climate control
+Minibar
+2
+Coffee machine
+Roomservice
+1
+Health care
+Business Suite
+100007
+Standard
+1
+12000
+2
+Internet
+TV
+3
+Iron
+Coffee machine
+Teapot
+2
+Minibar
+Roomservice
+Family Paradise
+100008
+Standard
+4
+18000
+3
+Twin bed
+TV
+Bath
+2
+Microwave
+Gels
+2
+Internet
+Health care
+Budget Stay
+100009
+Eco
+3
+4000
+1
+Single bed
+2
+Fan
+Teapot
+2
+TV
+Iron
+Luxury Tower
+100010
+Lux
+2
+55000
+3
+Minibar
+Bath
+TV
+3
+Roomservice
+Coffee machine
+Health care
+1
+Climate control
+Cozy Cottage
+100011
+Standard
+2
+9500
+2
+Single bed
+Fan
+2
+Teapot
+Microwave
+2
+Internet
+TV
+Tech Hub Hotel
+100012
+Standard
+3
+15000
+3
+Internet
+TV
+Climate control
+2
+Coffee machine
+Iron
+2
+Minibar
+Roomservice
+Green Eco Lodge
+100013
+Eco
+4
+4800
+2
+Single bed
+Fan
+3
+Gels
+Teapot
+Microwave
+1
+Internet
+Spa Resort
+100014
+Lux
+3
+38000
+3
+Bath
+TV
+Climate control
+2
+Minibar
+Health care
+2
+Roomservice
+Coffee machine
+Downtown Inn
+100015
+Standard
+2
+11000
+2
+Twin bed
+TV
+2
+Iron
+Internet
+2
+Microwave
+Fan
+Beach House
+100016
+Standard
+5
+16500
+3
+Bath
+TV
+Single bed
+2
+Coffee machine
+Gels
+2
+Minibar
+Internet
+Airport Hotel
+100017
+Eco
+3
+5200
+1
+TV
+3
+Teapot
+Fan
+Iron
+1
+Health care
+Historic Mansion
+100018
+Lux
+2
+42000
+4
+Climate control
+Bath
+TV
+Minibar
+2
+Roomservice
+Coffee machine
+1
+Internet
+Student Dorm
+100019
+Eco
+8
+3000
+2
+Single bed
+Fan
+2
+Microwave
+Teapot
+2
+Internet
+TV
+Presidential Suite
+100020
+Lux
+1
+75000
+3
+Bath
+TV
+Minibar
+3
+Roomservice
+Coffee machine
+Health care
+2
+Climate control
+Internet

@@ -1,12 +1,14 @@
 #include <iostream>
-#include <stdlib.h>
+#include <windows.h>
+
 int **init_matrix(int rows, int cols);
 void output(int **matrix, int rows, int cols);
 int input(int **matrix, int rows, int cols);
 int **sort(int **matrix, int rows, int cols, int key);
 
 int main() {
-    setlocale(LC_ALL, "ru_RU.UTF-8");
+    // SetConsoleCP(CP_UTF8);
+    // SetConsoleOutputCP(CP_UTF8);
     printf("Введите размерность матрицы (M x N): ");
     int M, N;
     if (scanf("%d %d", &M, &N) != 2 || N < 1 || M < 1) {

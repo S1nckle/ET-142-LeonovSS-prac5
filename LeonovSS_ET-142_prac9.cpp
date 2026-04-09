@@ -2,7 +2,7 @@
 
 using namespace std;
 
-enum comfort_enum {LUX, STANDART, ECO};
+enum comfort_enum {LUX, STANDARD, ECO};
 enum options_enum {
     SINGLE_BED, TWIN_BED, BATH, CLIMATE_CONTROL, TV,
     FAN,  GELS, TEAPOT, COFFEE_MACHINE, MICROWAVE,
@@ -27,14 +27,14 @@ struct room_t {
     options_t opt;
 };
 
-string str_comf(comfort_enum comf) {
-    string names[] = {"Lux", "Standart", "Eco"};
+string comftos(comfort_enum comf) {
+    string names[] = {"Lux", "Standard", "Eco"};
     return names[comf];
 }
 
 string str_opt(options_enum opt) {
     string names[] = {
-        "Single bed", "Twin bed", "Bath", "Cliamte control", "TV",
+        "Single bed", "Twin bed", "Bath", "Climate control", "TV",
         "Fan", "Gels", "Teapot", "Coffee machine", "Microwave",
         "Iron", "Minibar", "Roomservice", "Internet", "Health care"
     };
@@ -61,7 +61,7 @@ void print_options(room_t room) {
 void print_room(room_t room) {
     cout << "Room ID: " << room.id << endl;
     cout << "Hotel name: " << room.name;
-    cout << ", Comfort: " << str_comf(room.comf);
+    cout << ", Comfort: " << comftos(room.comf);
     cout << ", Capacity: " << room.capacity;
     cout << ", Cost: " << room.cost << endl;
     print_options(room);
@@ -271,19 +271,19 @@ int main() {
                 2, {IRON, ROOM_SERVICE} }
         },
         {
-            "My house", 32513245, STANDART, 3, 100,
+            "My house", 32513245, STANDARD, 3, 100,
             { 3, {TWIN_BED, CLIMATE_CONTROL, TV},
                 2, {GELS, COFFEE_MACHINE},
                 1, {INTERNET} }
         },
         {
-            "Living house", 5327346, STANDART, 1, 1400,
+            "Living house", 5327346, STANDARD, 1, 1400,
             { 4, {SINGLE_BED, BATH, FAN, IRON},
                 1, {MICROWAVE},
                 2, {MINIBAR, ROOM_SERVICE} }
         },
         {
-            "New Jersey ", 8675321, STANDART, 8, 6500,
+            "New Jersey ", 8675321, STANDARD, 8, 6500,
             { 2, {TV, TEAPOT},
                 3, {COFFEE_MACHINE, INTERNET, HEALTH_CARE},
                 2, {TWIN_BED, BATH} }
@@ -307,13 +307,13 @@ int main() {
                 3, {CLIMATE_CONTROL, MINIBAR, ROOM_SERVICE} }
         },
         {
-            "Hotel California", 723453245, STANDART, 6, 1231,
+            "Hotel California", 723453245, STANDARD, 6, 1231,
             { 3, {TWIN_BED, BATH, TV},
                 1, {IRON},
                 4, {COFFEE_MACHINE, TEAPOT, INTERNET, HEALTH_CARE} }
         },
         {
-            "Hotel 3", 624354, STANDART, 3, 15000,
+            "Hotel 3", 624354, STANDARD, 3, 15000,
             { 0, {},
                 3, {SINGLE_BED, FAN, GELS},
                 2, {BATH, MINIBAR} }
@@ -325,7 +325,7 @@ int main() {
                 1, {INTERNET} }
         },
         {
-            "Hotel of houses", 4632123, STANDART, 7, 17500,
+            "Hotel of houses", 4632123, STANDARD, 7, 17500,
             { 4, {SINGLE_BED, BATH, FAN, IRON},
                 2, {GELS, TEAPOT},
                 2, {MINIBAR, HEALTH_CARE} }
@@ -349,25 +349,25 @@ int main() {
                 2, {TV, MINIBAR} }
         },
         {
-            "Idk how to name", 767394, STANDART, 6, 1200,
+            "Idk how to name", 767394, STANDARD, 6, 1200,
             { 4, {BATH, FAN, GELS, TEAPOT},
                 1, {MICROWAVE},
                 2, {INTERNET, ROOM_SERVICE} }
         },
         {
-            "BimBimBamBam", 32456239, STANDART, 3, 9000,
+            "BimBimBamBam", 32456239, STANDARD, 3, 9000,
             { 1, {TWIN_BED},
                 3, {TV, COFFEE_MACHINE, MINIBAR},
                 2, {SINGLE_BED, IRON} }
         },
         {
-            "THE house", 2135214, STANDART, 8, 1800,
+            "THE house", 2135214, STANDARD, 8, 1800,
             { 2, {CLIMATE_CONTROL, INTERNET},
                 4, {BATH, GELS, MICROWAVE, HEALTH_CARE},
                 1, {FAN} }
         },
         {
-            "Hotel 10", -88634, STANDART, 1, 1450,
+            "Hotel 10", -88634, STANDARD, 1, 1450,
             { 3, {SINGLE_BED, TV, TEAPOT},
                 2, {COFFEE_MACHINE, ROOM_SERVICE},
                 2, {TWIN_BED, MINIBAR} }
